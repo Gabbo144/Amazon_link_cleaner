@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Amazon Link Cleaner",
-    "version": "1.0",
+    "version": "2.0",
     "description": "This extension simplifies Amazon product links by retaining only the domain and the product's ASIN code. Made by Gabriele La Vista.",
     "permissions": [
       "activeTab",
