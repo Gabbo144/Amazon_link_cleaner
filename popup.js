@@ -15,15 +15,15 @@ function cleanAmazonUrl() {
     if (url.host.includes("amazon") && pathMatch !== null) {
         const newUrl = `https://${url.host}/dp/${pathMatch[1]}`;
 
-        // Copy the cleaned URL to the clipboard
+        // Copy the cleaned URL to the clipboard and then redirect
         navigator.clipboard.writeText(newUrl)
             .then(() => {
                 console.log("Clean URL copied to clipboard");
+                window.location.href = newUrl;
             })
             .catch(err => {
                 console.error("Failed to copy URL: ", err);
+                window.location.href = newUrl;
             });
-
-        window.location.href = newUrl;
     }
 }
