@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Amazon Link Cleaner",
+    "version": "1.0",
+    "description": "This extension simplifies Amazon product links by retaining only the domain and the product's ASIN code. Made by Gabriele La Vista.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon1.png",
+        "48": "icon1.png",
+        "128": "icon1.png"
+      }
+    },
+    "icons": {
+      "16": "icon1.png",
+      "48": "icon1.png",
+      "128": "icon1.png"
+    }
+  }
+  
